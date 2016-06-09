@@ -15,36 +15,53 @@
  -->
 
 
-    <RelativeLayout
-        android:layout_width="fill_parent"
-        android:layout_height="wrap_content"
-        android:layout_alignBottom="@+id/etEditItem"
-        android:layout_alignParentRight="true"
-        android:layout_alignParentEnd="true"
-        android:layout_marginRight="156dp"
-        android:layout_marginEnd="156dp">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/linearLayout">
 
-    </RelativeLayout>
+        <EditText
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/editText"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignTop="@+id/linearLayout"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:text="Edit item below:"
+            android:textSize="30dp" />
 
-    <EditText
-        android:layout_width="wrap_content"
-        android:layout_height="fill_parent"
-        android:text=""
-        android:id="@+id/etEditItem"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
-        android:layout_toLeftOf="@+id/btnEditItem"
-        android:layout_toStartOf="@+id/btnEditItem"
-        android:layout_alignBottom="@+id/btnEditItem"
-        android:layout_alignParentTop="true" />
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/etEditItem"
+            android:layout_alignTop="@+id/etEditItem"
+            android:layout_alignRight="@+id/btnEditItem"
+            android:layout_alignEnd="@+id/btnEditItem">
 
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Save"
-        android:id="@+id/btnEditItem"
-        android:layout_alignParentTop="true"
-        android:layout_alignParentRight="true"
-        android:layout_alignParentEnd="true" />
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:text=""
+                android:id="@+id/etEditItem"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_toLeftOf="@+id/btnEditItem"
+                android:layout_toStartOf="@+id/btnEditItem"
+                android:layout_alignBottom="@+id/btnEditItem"
+                android:layout_alignParentTop="true" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Save"
+                android:id="@+id/btnEditItem"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true" />
+        </RelativeLayout>
+    </LinearLayout>
 
 </RelativeLayout>
