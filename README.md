@@ -41,6 +41,7 @@ GIF created with [LiceCap](http://www.cockos.com/licecap/).
 ## Notes
 
  - The examples for "startActivity" of the edit Activity and "finish" of subactivity were not clear enough.
+ - Mouse pointer not visible via "Wine" on Linux Machine
  
 
 ## License
